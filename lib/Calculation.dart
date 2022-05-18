@@ -24,7 +24,7 @@ class _CalculationState extends State<Calculation> {
               labelColor: Colors.black,
             )
           ],
-        )
+        ),
       ],
     );
   }
