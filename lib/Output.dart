@@ -44,7 +44,7 @@ calculation(String input) {
       num1List.add(input);
       // When pressed "=" after that hit any number
     } else if (_parameters.length == 0 && result != null) {
-      result = null;
+      result = 0;
       num1List = [];
       allInputs = [];
       num1List.add(input);
