@@ -11,7 +11,9 @@ class CalculatorApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter basic calculator',
-      home: Scaffold(body: Calculation(),),
+      home: Scaffold(
+        body: Calculation(),
+      ),
     );
   }
 }
