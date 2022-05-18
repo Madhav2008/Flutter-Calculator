@@ -6,7 +6,7 @@ class CalculatorButton extends StatelessWidget {
       required this.onTap,
       required this.size,
       this.backgroundColor = Colors.white,
-      this.labelColor = Colors.black});
+      this.labelColor = Colors.black,});
 
   final String label;
   final VoidCallback onTap;
