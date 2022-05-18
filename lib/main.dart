@@ -6,6 +6,11 @@ void main() {
   runApp(
     const MyApp(),
   );
+  SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+      )
+    );
 }
 
 class MyApp extends StatelessWidget {
