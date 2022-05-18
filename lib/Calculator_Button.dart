@@ -63,7 +63,7 @@ Widget _getButton({
 }) {
   return CalculatorButton(
     label: text,
-    onTap: ()=>onTap,
+    onTap: () => onTap,
     size: 90,
     backgroundColor: backgroundColor,
     labelColor: textColor,
