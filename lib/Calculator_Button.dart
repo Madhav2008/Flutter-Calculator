@@ -34,10 +34,11 @@ class CalculatorButton extends StatelessWidget {
           shape: CircleBorder(),
           onPressed: onTap,
           child: Center(
-              child: Text(
-            label,
-            style: TextStyle(fontSize: 24, color: labelColor),
-          ),),
+            child: Text(
+              label,
+              style: TextStyle(fontSize: 24, color: labelColor),
+            ),
+          ),
         ),
       ),
     );
