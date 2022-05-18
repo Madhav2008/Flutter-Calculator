@@ -16,14 +16,15 @@ class ResultDisplay extends StatelessWidget {
         height: 80,
         color: Colors.black,
         child: Container(
-            alignment: Alignment.centerRight,
-            padding: EdgeInsets.only(right: 24),
-            child: Text(
-              text,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 34,
-              ),
-            ),));
+          alignment: Alignment.centerRight,
+          padding: EdgeInsets.only(right: 24),
+          child: Text(
+            text,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 34,
+            ),
+          ),
+        ));
   }
 }
