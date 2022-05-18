@@ -157,7 +157,7 @@ class _CalculationState extends State<Calculation> {
     setState(() {
       switch (operator) {
         case '+':
-          result = firstOperand + secondOperand!;
+          result = firstOperand !+ secondOperand!;
           break;
         case '-':
           result = firstOperand !- secondOperand!;
