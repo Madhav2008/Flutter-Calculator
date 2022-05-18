@@ -194,7 +194,7 @@ Widget _getButton(
     {String text,
     Function onTap,
     Color backgroundColor = Colors.white,
-    Color textColor = Colors.black}) {
+    Color textColor = Colors.black,}) {
   return CalculatorButton(
     label: text,
     onTap: () => onTap,
