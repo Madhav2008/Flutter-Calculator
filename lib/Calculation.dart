@@ -163,7 +163,7 @@ class _CalculationState extends State<Calculation> {
           result = firstOperand - secondOperand!;
           break;
         case '*':
-          result = firstOperand * secondOperand!;
+          result = firstOperand !* secondOperand!;
           break;
         case '/':
           if (secondOperand == 0) {
