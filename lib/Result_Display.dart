@@ -25,6 +25,6 @@ class ResultDisplay extends StatelessWidget {
               fontSize: 34,
             ),
           ),
-        ));
+        ),);
   }
 }
