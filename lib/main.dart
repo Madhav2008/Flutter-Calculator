@@ -119,11 +119,6 @@ class _HomePageState extends State<HomePage> {
                     // +/- button
                     else if (index == 1) {
                       return MyButton(
-                        buttontapped: () {
-                          setState(() {
-                            userInput += buttons[index];
-                          });
-                        },
                         buttonText: buttons[index],
                         color: Colors.blue[50],
                         textColor: Colors.black,
