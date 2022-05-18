@@ -157,19 +157,19 @@ class _CalculationState extends State<Calculation> {
     setState(() {
       switch (operator) {
         case '+':
-          result = firstOperand !+ secondOperand!;
+          result = firstOperand! + secondOperand!;
           break;
         case '-':
-          result = firstOperand !- secondOperand!;
+          result = firstOperand! - secondOperand!;
           break;
         case '*':
-          result = firstOperand !* secondOperand!;
+          result = firstOperand! * secondOperand!;
           break;
         case '/':
           if (secondOperand == 0) {
             return;
           }
-          result = firstOperand !~/ secondOperand!;
+          result = firstOperand! ~/ secondOperand!;
           break;
       }
 
@@ -190,13 +190,12 @@ class _CalculationState extends State<Calculation> {
   }
 }
 
-Widget _getButton({
-  required String text,
-  Function? onTap,
-  Color backgroundColor = Colors.white,
-  Color textColor = Colors.black,
-  context
-}) {
+Widget _getButton(
+    {required String text,
+    Function? onTap,
+    Color backgroundColor = Colors.white,
+    Color textColor = Colors.black,
+    context}) {
   return CalculatorButton(
     label: text,
     onTap: () => onTap,
