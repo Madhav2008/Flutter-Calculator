@@ -26,7 +26,7 @@ class CalculatorButton extends StatelessWidget {
               BoxShadow(
                   color: Colors.grey, offset: Offset(1, 1), blurRadius: 2),
             ],
-            borderRadius: BorderRadius.all(Radius.circular(size / 2)),
+            borderRadius: BorderRadius.all(Radius.circular(size / 2),),
             color: backgroundColor),
         child: FlatButton(
           shape: CircleBorder(),
