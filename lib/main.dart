@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: new Text("Calculator"),
-      ), //AppBar
+      ),
       backgroundColor: Colors.white38,
       body: Column(
         children: <Widget>[
