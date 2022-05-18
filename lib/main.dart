@@ -105,7 +105,7 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
             fontWeight: FontWeight.bold,
           ),
         ),
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.blue[900],
         centerTitle: true,
       ),
       body: Column(
