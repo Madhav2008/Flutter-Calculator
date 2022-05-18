@@ -169,5 +169,12 @@ class _CalculationState extends State<Calculation> {
     });
   }
 
-  clear() {}
+  clear() {
+  setState(() {
+    result = null;
+    operator = null;
+    secondOperand = null;
+    firstOperand = null;
+  });
+}
 }
