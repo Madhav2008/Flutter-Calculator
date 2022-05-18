@@ -16,7 +16,7 @@ class MyButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: buttontapped,
+      onTap: => buttontapped,
       child: Padding(
         padding: const EdgeInsets.all(0.2),
         child: ClipRRect(
