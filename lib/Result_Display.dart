@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ResultDisplay extends StatelessWidget {
+  var text;
+
   ResultDisplay({
     required this.text, required this.result,
   });
