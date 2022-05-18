@@ -20,7 +20,6 @@ class MyButton extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(0.2),
         child: ClipRRect(
-          // borderRadius: BorderRadius.circular(25),
           child: Container(
             color: color,
             child: Center(
