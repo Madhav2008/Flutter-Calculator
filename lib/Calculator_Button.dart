@@ -35,19 +35,18 @@ class CalculatorButton extends StatelessWidget {
           ),
           color: backgroundColor,
         ),
-        child: FlatButton(
-          shape: CircleBorder(),
-          onPressed: onTap,
-          child: Center(
-            child: Text(
-              label,
-              style: TextStyle(
-                fontSize: 24,
-                color: labelColor,
-              ),
-            ),
-          ),
+        child:InkWell(
+        customBorder: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(size / 2)),
         ),
+        onTap: onTap,
+        child: Center(
+          child: Text(
+            label,
+            style: TextStyle(fontSize: 24, color: labelColor),
+          )
+        ),
+      ),
       ),
     );
   }
