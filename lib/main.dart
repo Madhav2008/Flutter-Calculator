@@ -101,7 +101,8 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
         title: Text(
           'Calculator',
           style: TextStyle(
-            fontSize: 25,fontWeight: FontWeight.bold,
+            fontSize: 25,
+            fontWeight: FontWeight.bold,
           ),
         ),
         centerTitle: true,
