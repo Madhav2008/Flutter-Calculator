@@ -16,7 +16,6 @@ class _CalculationState extends State<Calculation> {
         ResultDisplay(text: '0'),
         Row(
           children: [
-            // Here we want to place the buttons of the first Row
           ],
         ),
       ],
