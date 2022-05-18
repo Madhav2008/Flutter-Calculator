@@ -140,33 +140,34 @@ class _CalculationState extends State<Calculation> {
   }
 
   calculateResult() {
-  if (operator == null || secondOperand == null) {
-    return;
-  }
-  setState(() {
-    switch (operator) {
-      case '+':
-        result = firstOperand + secondOperand;
-        break;
-      case '-':
-        result = firstOperand - secondOperand;
-        break;
-      case '*':
-        result = firstOperand * secondOperand;
-        break;
-      case '/':
-        if (secondOperand == 0) {
-          return;
-        }
-        result = firstOperand ~/ secondOperand;
-        break;
+    if (operator == null || secondOperand == null) {
+      return;
     }
+    setState(() {
+      switch (operator) {
+        case '+':
+          result = firstOperand + secondOperand;
+          break;
+        case '-':
+          result = firstOperand - secondOperand;
+          break;
+        case '*':
+          result = firstOperand * secondOperand;
+          break;
+        case '/':
+          if (secondOperand == 0) {
+            return;
+          }
+          result = firstOperand ~/ secondOperand;
+          break;
+      }
 
-    firstOperand = result;
-    operator = null;
-    secondOperand = null;
-    result = null;
-  });
-}
+      firstOperand = result;
+      operator = null;
+      secondOperand = null;
+      result = null;
+    });
+  }
+
   clear() {}
 }
