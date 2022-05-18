@@ -57,7 +57,7 @@ class CalculatorButton extends StatelessWidget {
 
 Widget _getButton({
   required String text,
-  required Function onTap,
+  Function? onTap,
   Color backgroundColor = Colors.white,
   Color textColor = Colors.black,
 }) {
