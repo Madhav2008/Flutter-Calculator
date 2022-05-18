@@ -41,7 +41,7 @@ class _CalculationState extends State<Calculation> {
           children: [
             _getButton(text: '1', onTap: () => numberPressed(1)),
             _getButton(text: '2', onTap: () => numberPressed(2)),
-            _getButton(text: '3', onTap: () => numberPressed(3)),
+            _getButton(text: '3', onTap: () => numberPressed(3),),
             _getButton(
               text: '+',
               onTap: () => operatorPressed('+'),
