@@ -17,7 +17,10 @@ class _CalculationState extends State<Calculation> {
         ResultDisplay(text: '0'),
         Row(
           children: [
-            _getButton(text: '7', onTap: () => numberPressed(7),),
+            _getButton(
+              text: '7',
+              onTap: () => numberPressed(7),
+            ),
             _getButton(text: '8', onTap: () => numberPressed(8)),
             _getButton(
               text: '9',
