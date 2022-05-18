@@ -100,7 +100,7 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
       appBar: AppBar(
         title: Text(
           'Calculator',
-          style: TextStyle(fontSize: 25),
+          style: TextStyle(fontSize: 25,),
         ),
         centerTitle: true,
       ),
