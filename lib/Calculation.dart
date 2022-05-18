@@ -11,15 +11,13 @@ class _CalculationState extends State<Calculation> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-    children: [
+    return Column(children: [
       ResultDisplay(text: '0'),
       Row(
         children: [
           // Here we want to place the buttons of the first Row
         ],
       )
-    ]
-  );
+    ]);
   }
 }
