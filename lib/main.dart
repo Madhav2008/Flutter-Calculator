@@ -13,7 +13,7 @@ class Calculator extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Calculator',
-      theme: ThemeData(primarySwatch: Colors.blue[900]),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: SimpleCalculator(),
     );
   }
