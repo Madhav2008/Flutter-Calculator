@@ -37,7 +37,7 @@ class CalculatorButton extends StatelessWidget {
               child: Text(
             label,
             style: TextStyle(fontSize: 24, color: labelColor),
-          )),
+          ),),
         ),
       ),
     );
