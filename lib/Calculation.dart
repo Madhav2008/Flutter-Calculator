@@ -19,7 +19,10 @@ class _CalculationState extends State<Calculation> {
           children: [
             _getButton(text: '7', onTap: () => numberPressed(7)),
             _getButton(text: '8', onTap: () => numberPressed(8)),
-            _getButton(text: '9', onTap: () => numberPressed(9),),
+            _getButton(
+              text: '9',
+              onTap: () => numberPressed(9),
+            ),
             _getButton(
                 text: 'x',
                 onTap: () => operatorPressed('*'),
