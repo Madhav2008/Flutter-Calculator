@@ -10,6 +10,19 @@ class Calculation extends StatefulWidget {
 class _CalculationState extends State<Calculation> {
   late int result;
 
+  double width = 0;
+
+  int? firstOperand;
+  String? operator;
+  int? secondOperand;
+  int? result;
+
+  @override
+  void didChangeDependencies() {
+    width = MediaQuery.of(context).size.width;
+    super.didChangeDependencies();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
