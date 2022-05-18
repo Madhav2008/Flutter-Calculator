@@ -7,7 +7,7 @@ class Calculation extends StatefulWidget {
 }
 
 class _CalculationState extends State<Calculation> {
-  int result;
+  late int result;
 
   @override
   Widget build(BuildContext context) {
