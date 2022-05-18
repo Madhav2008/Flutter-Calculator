@@ -85,4 +85,8 @@ class _CalculationState extends State<Calculation> {
       ],
     );
   }
+  operatorPressed(String operator) {}
+numberPressed(int number) {}
+calculateResult() {}
+clear() {}
 }
