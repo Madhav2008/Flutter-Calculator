@@ -32,7 +32,7 @@ class CalculatorButton extends StatelessWidget {
             borderRadius: BorderRadius.all(
               Radius.circular(size / 2),
             ),
-            color: backgroundColor),
+            color: backgroundColor,),
         child: FlatButton(
           shape: CircleBorder(),
           onPressed: onTap,
