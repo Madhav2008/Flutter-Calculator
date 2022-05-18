@@ -170,11 +170,11 @@ class _CalculationState extends State<Calculation> {
   }
 
   clear() {
-  setState(() {
-    result = null;
-    operator = null;
-    secondOperand = null;
-    firstOperand = null;
-  });
-}
+    setState(() {
+      result = null;
+      operator = null;
+      secondOperand = null;
+      firstOperand = null;
+    });
+  }
 }
