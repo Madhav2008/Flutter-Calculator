@@ -106,7 +106,29 @@ class _CalculationState extends State<Calculation> {
     );
   }
 
-  operatorPressed(String operator) {}
+  numberPressed(int number) {
+  setState(() {
+    if (result != null) {
+      result = null;
+      firstOperand = number;
+      return;
+    }
+    if (firstOperand == null) {
+      firstOperand = number;
+      return;
+    }
+    if (operator == null) {
+      firstOperand = int.parse('$firstOperand$number');
+      return;
+    }
+    if (secondOperand == null) {
+      secondOperand = number;
+      return;
+    }
+
+    secondOperand = int.parse('$secondOperand$number');
+  });
+}
   numberPressed(int number) {
     setState(() {
       if (result != null) {
