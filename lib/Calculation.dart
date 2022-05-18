@@ -199,7 +199,7 @@ Widget _getButton({
   return CalculatorButton(
     label: text,
     onTap: () => onTap,
-    size: width / 4 - 12,
+    size: MediaQuery.of(context).size.width / 4 - 12,
     backgroundColor: backgroundColor,
     labelColor: textColor,
   );
