@@ -168,7 +168,7 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
                       buildButton(".", 1, Colors.black87),
                       buildButton("0", 1, Colors.black87),
                       buildButton("00", 1, Colors.black87),
-                    ]),
+                    ],),
                   ],
                 ),
               ),
