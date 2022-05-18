@@ -193,7 +193,7 @@ class _CalculationState extends State<Calculation> {
 Widget _getButton({String text, Function onTap, Color backgroundColor = Colors.white, Color textColor = Colors.black}) {
     return CalculatorButton(
       label: text,
-      onTap: onTap,
+      onTap: ()=>onTap,
       size: width / 4 - 12,
       backgroundColor: backgroundColor,
       labelColor: textColor,
