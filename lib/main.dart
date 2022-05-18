@@ -70,7 +70,7 @@ class _HomePageState extends State<HomePage> {
                     alignment: Alignment.centerRight,
                     child: Text(
                       userInput,
-                      style: TextStyle(fontSize: 18, color: Colors.white),
+                      style: TextStyle(fontSize: 18, color: Colors.white,),
                     ),
                   ),
                   Container(
