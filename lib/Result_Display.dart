@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 class ResultDisplay extends StatelessWidget {
   ResultDisplay({
     required this.text,
-    this.result,
+    // this.result,
   });
 
-  final int result;
+  // final int result;
   final String text;
 
   @override
