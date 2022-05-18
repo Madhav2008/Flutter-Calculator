@@ -10,7 +10,7 @@ class MyButton extends StatelessWidget {
     this.color,
     this.textColor,
     required this.buttonText,
-    this.buttontapped,
+    required this.buttontapped,
   });
 
   @override
