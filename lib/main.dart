@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
               child: GridView.builder(
                   itemCount: buttons.length,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 4),
+                      crossAxisCount: 4,),
                   itemBuilder: (BuildContext context, int index) {
                     // Clear Button
                     if (index == 0) {
