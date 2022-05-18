@@ -18,6 +18,6 @@ class _CalculationState extends State<Calculation> {
           // Here we want to place the buttons of the first Row
         ],
       )
-    ]);
+    ],);
   }
 }
