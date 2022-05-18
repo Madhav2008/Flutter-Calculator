@@ -15,16 +15,16 @@ class _CalculationState extends State<Calculation> {
       children: [
         ResultDisplay(text: '0'),
         Row(
-  children: [
-    CalculatorButton(
-      label: '7',
-      onTap: () => {},
-      size: 90,
-      backgroundColor: Colors.white,
-      labelColor: Colors.black,
-    )
-  ],
-)
+          children: [
+            CalculatorButton(
+              label: '7',
+              onTap: () => {},
+              size: 90,
+              backgroundColor: Colors.white,
+              labelColor: Colors.black,
+            )
+          ],
+        )
       ],
     );
   }
