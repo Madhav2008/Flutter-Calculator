@@ -20,7 +20,10 @@ class ResultDisplay extends StatelessWidget {
             padding: EdgeInsets.only(right: 24),
             child: Text(
               text,
-              style: TextStyle(color: Colors.white, fontSize: 34,),
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 34,
+              ),
             )));
   }
 }
