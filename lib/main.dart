@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
     '=',
     '+',
   ];
-  final List<String> buttonTapped = [
+  final List<String> buttons = [
     'C',
     '+/-',
     '%',
