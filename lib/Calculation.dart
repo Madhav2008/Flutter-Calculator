@@ -55,7 +55,10 @@ class _CalculationState extends State<Calculation> {
                 onTap: calculateResult,
                 backgroundColor: Colors.orange,
                 textColor: Colors.white),
-            _getButton(text: '0', onTap: () => numberPressed(0),),
+            _getButton(
+              text: '0',
+              onTap: () => numberPressed(0),
+            ),
             _getButton(
               text: 'C',
               onTap: clear,
