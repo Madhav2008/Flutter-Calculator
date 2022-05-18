@@ -14,4 +14,7 @@ const typeTextStyle = TextStyle(
 );
 
 const kResultTextStyle = TextStyle(
-    fontSize: 40, color: kTextColorBlack, fontWeight: FontWeight.w500,);
+  fontSize: 40,
+  color: kTextColorBlack,
+  fontWeight: FontWeight.w500,
+);
