@@ -79,9 +79,10 @@ class _HomePageState extends State<HomePage> {
                       child: Text(
                         answer,
                         style: TextStyle(
-                            fontSize: 30,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,),
+                          fontSize: 30,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     )
                   ]),
