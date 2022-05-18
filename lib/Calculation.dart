@@ -169,7 +169,7 @@ class _CalculationState extends State<Calculation> {
           if (secondOperand == 0) {
             return;
           }
-          result = firstOperand ~/ secondOperand!;
+          result = firstOperand !~/ secondOperand!;
           break;
       }
 
