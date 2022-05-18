@@ -51,10 +51,11 @@ class _CalculationState extends State<Calculation> {
         Row(
           children: [
             _getButton(
-                text: '=',
-                onTap: calculateResult,
-                backgroundColor: Colors.orange,
-                textColor: Colors.white,),
+              text: '=',
+              onTap: calculateResult,
+              backgroundColor: Colors.orange,
+              textColor: Colors.white,
+            ),
             _getButton(
               text: '0',
               onTap: () => numberPressed(0),
