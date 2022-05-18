@@ -23,7 +23,7 @@ class ResultDisplay extends StatelessWidget {
         ),
         child: Text(
           text,
-          style: TextStyle(color: Colors.white, fontSize: 34),
+          style: TextStyle(color: Colors.white, fontSize: 34,),
         ),
       ),
     );
