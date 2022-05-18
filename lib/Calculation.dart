@@ -171,7 +171,7 @@ class _CalculationState extends State<Calculation> {
       //     }
       //     result = firstOperand! ~/ secondOperand!;
       //     break;
-      }
+      // }
 
       firstOperand = result;
       operator = null;
