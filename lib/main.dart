@@ -183,9 +183,11 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
                         buildButton("×", 1, Colors.blue.shade900),
                       ],
                     ),
-                    TableRow(children: [
-                      buildButton("-", 1, Colors.blue.shade900),
-                    ],),
+                    TableRow(
+                      children: [
+                        buildButton("-", 1, Colors.blue.shade900),
+                      ],
+                    ),
                     TableRow(children: [
                       buildButton("+", 1, Colors.blue.shade900),
                     ]),
