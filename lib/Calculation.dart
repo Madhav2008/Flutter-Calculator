@@ -57,9 +57,10 @@ class _CalculationState extends State<Calculation> {
                 textColor: Colors.white),
             _getButton(text: '0', onTap: () => numberPressed(0)),
             _getButton(
-                text: 'C',
-                onTap: clear,
-                backgroundColor: Color.fromRGBO(220, 220, 220, 1),),
+              text: 'C',
+              onTap: clear,
+              backgroundColor: Color.fromRGBO(220, 220, 220, 1),
+            ),
             _getButton(
               text: '-',
               onTap: () => operatorPressed('-'),
