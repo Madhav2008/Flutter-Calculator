@@ -8,7 +8,6 @@ class Calculation extends StatefulWidget {
 }
 
 class _CalculationState extends State<Calculation> {
-
   double width = 0;
 
   int? firstOperand;
