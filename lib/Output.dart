@@ -15,7 +15,7 @@ calculation(String input) {
     _parameters = [];
     allInputs = [];
     displayInputs = null;
-    result = null;
+    result = 0;
     return;
   }
   // if two value are available then the '=' work
