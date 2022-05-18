@@ -14,7 +14,7 @@ calculation(String input) {
     num2List = [];
     _parameters = [];
     allInputs = [];
-    displayInputs = null;
+    displayInputs = 0;
     result = 0;
     return;
   }
