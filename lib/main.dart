@@ -13,13 +13,13 @@ class MyApp extends StatelessWidget {
 
   @override
   void initState() {
+    super.initState();
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
       )
     );
 
-    super.initState();
   }
 
   @override
