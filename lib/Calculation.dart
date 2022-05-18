@@ -15,8 +15,7 @@ class _CalculationState extends State<Calculation> {
       children: [
         ResultDisplay(text: '0'),
         Row(
-          children: [
-          ],
+          children: [],
         ),
       ],
     );
