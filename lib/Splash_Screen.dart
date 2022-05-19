@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Lottie.network(
           'https://assets9.lottiefiles.com/packages/lf20_rw2h0z7r.json',
-          width: 200,
+          width: MediaQuery.of(context).size.width/2,
           height: 200,
         ),
       ),
