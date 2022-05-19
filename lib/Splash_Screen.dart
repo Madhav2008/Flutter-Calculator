@@ -33,21 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder(
-      future: _initialization,
-      builder: (context, snapshot) {
-        if (snapshot.hasError) {
-          return NoConnection(image: '../assets/images/2.png');
-        }
-        if (snapshot.connectionState == ConnectionState.done) {
-          return ChangeNotifierProvider(
-            create: (context) {
-              ConnectivityChangeNotifier changeNotifier =
-                  ConnectivityChangeNotifier();
-              changeNotifier.initialLoad();
-              return changeNotifier;
-            },
-            child: Scaffold(
+    return Scaffold(
               body: Align(
                 alignment: Alignment.center,
                 child: Column(
