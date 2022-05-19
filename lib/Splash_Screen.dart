@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
         backgroundColor: Colors.redAccent,
         body: Stack(
           children: <Widget>[
-           Positioned(
+            Positioned(
               child: ClipPath(
                 child: Container(
                   width: MediaQuery.of(context).size.width,
@@ -51,12 +51,11 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
             ),
             new Center(
-              child: Image.asset(
-                "assets/images/Logo4Recipo.png",
-                width: 500,
-                height: 500,
-              )
-            )
+                child: Image.asset(
+              "assets/images/Logo4Recipo.png",
+              width: 500,
+              height: 500,
+            ))
           ],
         ));
   }
@@ -75,7 +74,7 @@ class _SplashScreenState extends State<SplashScreen> {
         context,
         MaterialPageRoute(builder: (context) => Wrapper()),
       );
-    }else{
+    } else {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => Wrapper()),
