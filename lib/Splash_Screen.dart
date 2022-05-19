@@ -2,7 +2,6 @@ import 'dart:async';
 import 'package:Foodybite/auth/wrapper.dart';
 import 'package:Foodybite/screens/splash_screen/Zig_Zag_Zipper.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
