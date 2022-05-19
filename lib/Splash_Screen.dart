@@ -2,6 +2,7 @@
 
 import 'package:calculator/main.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class SplashScreen extends StatefulWidget {
   SplashScreen({
@@ -35,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: ,
+        child: Lottie.network(url),
       ),
     );
   }
