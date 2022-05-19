@@ -39,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Lottie.network(
           'https://assets9.lottiefiles.com/packages/lf20_rw2h0z7r.json',
           width: MediaQuery.of(context).size.width / 2,
-          height: MediaQuery.of(context).size.height/2,
+          height: MediaQuery.of(context).size.height / 2,
         ),
       ),
     );
