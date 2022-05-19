@@ -1,84 +1,117 @@
-import 'dart:async';
+// ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_const_constructors_in_immutables
+
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:provider/provider.dart';
+import 'package:whatsapp/Constants/Constants.dart';
+import 'package:whatsapp/No_Connection/No_Connection.dart';
+import 'package:whatsapp/Screens/Landing_Page/Landing_Page.dart';
+import 'package:whatsapp/Screens/No_Connection_Screen/No_Connection_Screen.dart';
+import 'package:whatsapp/Theme/Provider/Theme_Provider.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class SplashScreen extends StatefulWidget {
+  SplashScreen({
+    Key? key,
+  }) : super(key: key);
+
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  startTime() async {
-    var _duration = Duration(seconds: 2);
-    return Timer(_duration, navigationPage);
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(
+      Duration(
+        seconds: 1,
+      ),
+      () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => LandingPage(),
+          ),
+        );
+      },
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        backgroundColor: Colors.redAccent,
-        body: Stack(
-          children: <Widget>[
-            Positioned(
-              child: ClipPath(
-                child: Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height / 2,
-                  color: Color.fromRGBO(226, 55, 68, 1.0),
+    final Future<FirebaseApp> _initialization = Firebase.initializeApp();
+    final logo = Provider.of<ThemeProvider>(context).themeMode == ThemeMode.dark
+        ? '../assets/images/WhatsAppIndiaLogo1.png'
+        : '../assets/images/WhatsAppIndiaLogo.png';
+    return FutureBuilder(
+      future: _initialization,
+      builder: (context, snapshot) {
+        if (snapshot.hasError) {
+          return NoConnection(image: '../assets/images/2.png');
+        }
+        if (snapshot.connectionState == ConnectionState.done) {
+          return ChangeNotifierProvider(
+            create: (context) {
+              ConnectivityChangeNotifier changeNotifier =
+                  ConnectivityChangeNotifier();
+              changeNotifier.initialLoad();
+              return changeNotifier;
+            },
+            child: Scaffold(
+              body: Align(
+                alignment: Alignment.center,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      logo,
+                      width: 85,
+                      height: 85,
+                    ),
+                    SizedBox(
+                      height: 250,
+                    ),
+                    Text(
+                      'from',
+                      style: TextStyle(
+                        color: grey,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset(
+                          '../assets/images/meta.png',
+                          color: secondary,
+                          width: 30,
+                          height: 30,
+                        ),
+                        Text(
+                          'Meta',
+                          style: TextStyle(
+                            color: secondary,
+                            letterSpacing: 3,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
-                clipper: ZigZagClipper(),
               ),
             ),
-            new Positioned(
-              top: 40,
-              child: ClipPath(
-                child: Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height / 2,
-                  color: Color.fromRGBO(226, 55, 68, 0.80),
-                ),
-                clipper: ZigZagClipper(),
-              ),
-            ),
-            new Positioned(
-              top: 80,
-              child: ClipPath(
-                child: Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height / 2,
-                  color: Color.fromRGBO(226, 55, 68, 0.60),
-                ),
-                clipper: ZigZagClipper(),
-              ),
-            ),
-            new Center(
-                child: Image.asset(
-              "assets/images/Logo4Recipo.png",
-              width: 500,
-              height: 500,
-            ))
-          ],
-        ));
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    startTime();
-  }
-
-  void navigationPage() async {
-    final prefs = await SharedPreferences.getInstance();
-    final token = prefs.getString('token') ?? '';
-    if (token.isEmpty) {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => Wrapper()),
-      );
-    } else {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => Wrapper()),
-      );
-    }
+          );
+        }
+        return SpinKitFadingCube(
+          size: 50,
+          color: one,
+        );
+      },
+    );
   }
 }
