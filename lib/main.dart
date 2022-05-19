@@ -1,3 +1,4 @@
+import 'package:calculator/Splash_Screen.dart';
 import 'package:flutter/material.dart';
 import 'package:math_expressions/math_expressions.dart';
 
@@ -14,7 +15,7 @@ class Calculator extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Calculator',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: SimpleCalculator(),
+      home: SplashScreen(),
     );
   }
 }
