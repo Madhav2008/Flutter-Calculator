@@ -33,9 +33,6 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final logo = Provider.of<ThemeProvider>(context).themeMode == ThemeMode.dark
-        ? '../assets/images/WhatsAppIndiaLogo1.png'
-        : '../assets/images/WhatsAppIndiaLogo.png';
     return FutureBuilder(
       future: _initialization,
       builder: (context, snapshot) {
