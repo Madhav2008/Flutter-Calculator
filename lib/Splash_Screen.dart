@@ -37,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: Center(
         child: Image.network(
-          'https://assets9.lottiefiles.com/packages/lf20_b8nTIj.json',
+          'splash.mp4',
           width: MediaQuery.of(context).size.width / 2,
           height: MediaQuery.of(context).size.height / 2,
         ),
