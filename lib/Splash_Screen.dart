@@ -36,7 +36,9 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Lottie.network('',),
+        child: Lottie.network(
+          '',
+        ),
       ),
     );
   }
